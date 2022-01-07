@@ -95,7 +95,7 @@ for (let i=0; i<hearts.length;i++){
 
 
 
- 
+/****************Function addTodo */
 
 function addtodo (){
     let text= document.createTextNode(input.value)
