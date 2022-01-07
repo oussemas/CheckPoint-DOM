@@ -1,0 +1,129 @@
+*{ padding:0px;
+margin:0px;    
+box-sizing:border-box;
+text-decoration:none
+ }
+.stickynav{
+     position:fixed;
+     top: 0%;
+     width: 100%;
+     z-index: 100;
+ }
+ .navLogo{
+    max-width: 100%;
+   
+ }
+ .navLogo{
+     background-color: #191919;
+ }
+ .buttonNav{
+     display: flex;
+     justify-content: center;
+     margin-top: -106px;
+     
+ }
+ .shopButton{
+  
+     margin-top: 12px;
+     
+     margin-right: 20px;
+
+ }
+ .shopingNav{
+    display: flex;
+    justify-content: end;
+    opacity: 0.5;
+    color: rgb(126, 119, 119);
+
+   
+
+ }
+ h2 {
+     font-size: medium !important;
+ }
+ .shopingNav:hover{
+     opacity: 1;
+     color: white;
+ }
+ .imgNav{
+     height: 40px;
+ }
+ .textNav{
+    color: #191919;
+    background-color:white;
+    text-decoration: none;
+    height: 50px;
+    
+ }
+ .textNav{
+     margin-right: 3px;
+     margin-left: 11px;
+     border-radius: 150px;
+    text-align: center;
+    width: 116px;
+ }
+ .rechercheNav{
+     display: flex;
+     justify-content: end;
+     color: white;
+     margin-top: -30px;
+     margin-right: 25px;
+     margin-left: 25px;
+ }
+ #h1{
+     height: 20px;
+     margin-left: 25px;
+     margin-right: 25px;
+ }
+ 
+ .headerNav{
+     margin-top: 10%;
+     display: flex;
+     justify-content:space-between;
+     background-color: #F7BB11;
+    
+     
+    
+     
+    
+
+
+ }
+ .headerNav a{
+    color: white;
+    text-decoration: none;
+ }
+ .headerNav{
+    margin-left: 277px;
+    margin-right: 277px;
+    margin-top: 150px;
+    
+    
+     
+ }
+ .sectionImage{
+     display: flex;
+     justify-content: space-around;
+     
+ }
+ 
+ .buttonn{
+   opacity: 0.5;
+    color: black;
+ }
+ 
+ .buttonn:hover{
+    opacity: 1;
+     color: #F7BB11;
+      
+  }
+  .qnnt{
+      display: none;
+  }
+  .prix{
+      display: none;
+  }
+  .heart{
+      border: none;
+      background-color: white   ;
+  }

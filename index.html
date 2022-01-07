@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head> 
+<body>
+    <header>
+        <nav>
+            <div class="stickynav" >
+                <div class="navLogo" >
+            <img src="https://www.expert-gaming.tn/image/logo/EXPERT_GAMING_logo.png" alt="logo" width="250 px" >
+        </div>
+        <div class="buttonNav" >
+            <button class="buttonn" >Toutes les catégorie</button>
+           
+                <a class="textNav"  href="#">accésoire</a>
+                <a class="textNav"  href="#">alimentation</a>
+                <a class="textNav" href="#">boitier PC</a>
+                <a class="textNav" href="#">carte graphique</a>             
+                <a class="textNav" href="#">carte mére</a>
+            
+            
+        </div>
+        <div class="rechercheNav" >
+            <label id="rech" for="gsearch">Recherche</label>
+            <input id="text"
+                    
+            
+
+             type="search" id="gsearch" name="gsearch"><button id="addBtn" >
+                 <img id="h1"  src="data:image/png;base64,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" alt="logo"></button>
+        </div>
+        <ul id="myUL" >
+          <!-- text li -->
+
+        </ul>
+        <div class="shopingNav" >
+          <a href="#somme">           <button class="shopButton" id="shop" ><img  class="imgNav" src="https://www.seekpng.com/png/detail/134-1344280_add-items-to-cart-minimalist-shopping-cart.png" alt="logo"><p id="parahraph1" >0</p></button></a>
+
+        </div>
+            </div>
+         <div class="headerNav" >
+          
+                  <a href="#">PC GAMER</a> 
+                  <a href="#">PACK GAMIN</a> 
+                  <a href="#">PERIPHERIQUES</a> 
+                 <a href="#">COMPOSANTS</a> 
+                 <a href="#">LAPTOPS</a> 
+                 <a href="#">PROMOTION</a> 
+             
+
+         </div>
+        </div>
+        </nav>
+       
+    </header>
+    <!-- *************************************** -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#"><img src="https://betatest.expert-gaming.tn/ckfinder/userfiles/images/banniere/banner-site-web-.jpg" alt="pc gamer" class="imagecaro d-block w-100"  ></a>
+        </div>
+          <div class="carousel-item">
+            <a href="#"> <img src="https://betatest.expert-gaming.tn/ckfinder/userfiles/images/produit/PURE%20STEEL%20BLACK/banner-zotac.jpg" alt="carte graphique" class="imagecaro d-block w-100 " ></a>
+        </div>
+          <div class="carousel-item">
+            <a href="#"><img src="https://betatest.expert-gaming.tn/ckfinder/userfiles/files/Produit%202.0/Sans-titre-1.png" alt="carte mére" class="imagecaro d-block w-100 " ></a>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- *********************************************** -->
+    <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+<img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/files/Pc%20Portable/GIGABYTE/AERO%2015%20OLED%20KD/LD0005846600_1_0005847619.jpg">  <h2>GIGABYTE AERO 15 OLED KD - 15.6</h2>
+                <div class="card-body">
+                  <p class="card-text">Réf : Aero 15 KD-72FR624SP <br>
+                6660.000 TND</p>
+                <p class="prix">6660.000 </p>
+                <button class="heart">♡</button>
+
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary ed ">Edit</button>
+                      <div class="qnnt">
+                        <button class="plus">+</button>
+                      <p class="qt" >0</p>
+                      <button class="moin" >-</button>
+                      </div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/images/produit/WHITE%20SHARK/Boitier%20White%20Shark/WHITE%20SHARK%20PUNKER/1-thumb%20(2).png">  <h2>Intel i5 10400F - GTX 1050Ti OC - 8Gb Ram</h2>
+    
+                <div class="card-body">
+                  <p class="card-text">Réf : I5-10400F-GTX1050Ti-8GBR <br>
+                1849.000 TND</p>
+                <p class="prix">1849.000 </p>
+                <button class="heart">♡</button>
+
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary ed">Edit</button>
+                      <div class="qnnt">
+                        <button class="plus">+</button>
+                      <p class="qt" >0</p>
+                      <button class="moin" >-</button>
+                      </div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/images/produit/WHITE%20SHARK/Souris%20White%20Shark/SOURIS%20GAMER%20WHITE%20SHARK%20SAGRAMORE/1-thumb%20(8).png">  <h2>SOURIS GAMER WHITE SHARK SAGRAMORE GM-9003 RGB / NOIR</h2>
+    
+                <div class="card-body">
+                  <p class="card-text">Ref:GM 900 <br>
+                63.000 TND </p>
+                <p class="prix">63.000 </p>
+                <button class="heart">♡</button>
+
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary ed">Edit</button>
+                      <div class="qnnt">
+                        <button class="plus">+</button>
+                      <p class="qt" >0</p>
+                      <button class="moin" >-</button>
+                      </div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/images/produit/RAM/G.SKILL%20SNIPER%20X%20SERIES%2016%20GO/__thumbs/LD0004770266_2_0004879270.jpg/LD0004770266_2_0004879270__600x600.jpg">  <h2>G.SKILL SNIPER X SERIES 16 GO (2X 8 GO) DDR4 2666 MHZ CL19
+                </h2>
+                <div class="card-body" >
+                  <p class="card-text">Ref:G.SKILL SNIPER X SERIES 16 GO (2X 8 GO) DDR4 2666 MHZ CL19 <br>
+                    330.000 TND
+                </p>
+                <p class="prix">330.000 </p>
+                <button class="heart">♡</button>
+
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary ed">Edit</button>
+                      <div class="qnnt">
+                        <button class="plus">+</button>
+                      <p class="qt" >0</p>
+                      <button class="moin" >-</button>
+                      </div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/images/produit/Microphone/HyperX%20SoloCast/LD0005785693_1.jpg">  <h2>Microphone HyperX SoloCast
+                </h2>
+    
+                <div class="card-body">
+                  <p class="card-text">Ref:Microphone HyperX SoloCast <br>
+                    220.000 TND
+                </p>
+                <p class="prix">220.000 </p>
+                <button class="heart">♡</button>
+
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary ed">Edit</button>
+                      <div class="qnnt">
+                        <button class="plus">+</button>
+                      <p class="qt" >0</p>
+                      <button class="moin" >-</button>
+                      </div>
+                    </div>
+                         <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/images/produit/AIO/Abkoncore%20Hurricane%20120/abkoncore-hr310-tunisie-1.jpg">  <h2>Abkoncore Hurricane 120 Spectrum 3-in-1</h2>
+    
+                <div class="card-body">
+                  <p class="card-text">Ref:Abkoncore Hurricane 120 Spectrum 3-in-1 <br>
+                120.000 TND</p>
+                <p class="prix">120.000 </p>
+                <button class="heart" >♡</button>
+
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary ed">Edit</button>
+                      <div class="qnnt">
+                        <button class="plus">+</button>
+                      <p class="qt" >0</p>
+                      <button class="moin" >-</button>
+                      </div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- <div class="col"> -->
+              <!-- <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/files/Pc%20Portable/GIGABYTE/AERO%2015%20OLED%20KD/LD0005846600_1_0005847619.jpg">  <h2>GIGABYTE AERO 15 OLED KD - 15.6</h2>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="col">
+              <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/files/Pc%20Portable/GIGABYTE/AERO%2015%20OLED%20KD/LD0005846600_1_0005847619.jpg">  <h2>GIGABYTE AERO 15 OLED KD - 15.6</h2>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="co
+              <div class="card shadow-sm">
+                <img   data-aos="fade-up"  width="100%" height="225" src="https://betatest.expert-gaming.tn/ckfinder/userfiles/files/Pc%20Portable/GIGABYTE/AERO%2015%20OLED%20KD/LD0005846600_1_0005847619.jpg">  <h2>GIGABYTE AERO 15 OLED KD - 15.6</h2>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <form>
+        <input type="text" name="" id="somme" value="0" >
+      </form>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
